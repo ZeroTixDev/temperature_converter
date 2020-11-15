@@ -26,6 +26,7 @@ fn main() {
             let number: i32 = match guess.trim().parse() {
                 Ok(num) => num,
                 Err(_) => {
+                	println!("Invalid input");
                     continue;
                 }
             };
